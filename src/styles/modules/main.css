@@ -1,0 +1,86 @@
+:root {
+  /* colors */
+  --red: #e41616;
+  --light-gray: #9d9d9d;
+  --black: #000000;
+  --white: #ffffff;
+  /* settings */
+  --container: 1680px;
+  --padding: 16px;
+  /* fonts */
+  --main-font: "Inter", system-ui;
+  font: 400 1rem/1.5 var(--main-font);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:active,
+:focus {
+  outline-color: var(--light-gray);
+}
+
+html,
+body {
+  min-width: 320px;
+  height: 100%;
+}
+
+body {
+  color: var(--black);
+  background-color: var(--white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul > li {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+button {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: inherit;
+}
+
+.container {
+  margin: 0 auto;
+  width: calc(100% - (var(--padding) * 2));
+  max-width: var(--container);
+
+  border: 3px solid orange;
+}
