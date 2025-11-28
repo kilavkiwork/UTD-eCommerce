@@ -4,7 +4,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 1.21;
-  color: var(--black);
+  color: inherit;
 }
 .title--h2 {
   font-size: 2.375rem;
