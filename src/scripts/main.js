@@ -1,1 +1,4 @@
-console.log("hello script");
+import { initTrendingTabs } from "./modules/tabs";
+
+//
+initTrendingTabs();
