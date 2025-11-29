@@ -125,7 +125,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 63px;
+  width: fit-content;
   height: 34px;
   padding: 8px 16px;
   font-style: normal;
@@ -137,6 +137,11 @@
   background: var(--white);
   border: 1px solid var(--max-light-gray);
   border-radius: 8px;
+}
+.trending__card-badge--sale {
+  background: var(--red);
+  color: var(--white);
+  border-color: var(--red);
 }
 
 /* .trending__card-buttons */
@@ -193,3 +198,5 @@
 .trending__card-price del {
   color: var(--light-gray);
 }
+
+/* tags */
