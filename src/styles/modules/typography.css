@@ -12,3 +12,12 @@
 .title--h3 {
   font-size: 1.75rem;
 }
+
+@media (max-width: 992px) {
+  .title--h2 {
+    font-size: 1.75rem;
+  }
+  .title--h3 {
+    font-size: 1.375rem;
+  }
+}

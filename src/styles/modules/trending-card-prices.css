@@ -33,3 +33,15 @@
 .trending__card-price del {
   color: var(--light-gray);
 }
+
+@media (max-width: 768px) {
+  .trending__card-prices {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 8px;
+    inset: auto 8px 8px 8px;
+    bottom: 8px;
+    width: calc(100% - 16px);
+  }
+}

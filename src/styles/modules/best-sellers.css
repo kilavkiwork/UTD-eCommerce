@@ -11,3 +11,13 @@
   justify-content: space-between;
   align-items: center;
 }
+
+@media (max-width: 768px) {
+  .trending {
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+  }
+  .best-sellers .container {
+    padding: 16px 0;
+  }
+}

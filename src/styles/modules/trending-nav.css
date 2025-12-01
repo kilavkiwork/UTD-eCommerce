@@ -1,4 +1,5 @@
 .trending__nav {
+  width: 100%;
   max-width: 816px;
   padding: 0 64px;
 }
@@ -46,4 +47,22 @@
   color: var(--black);
   border-bottom-color: var(--hover-black);
   transition: color var(--trans), border-bottom-color var(--trans);
+}
+
+@media (max-width: 768px) {
+  .trending__nav {
+    padding: 0;
+  }
+  .trending__list:not(:first-child) {
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .trending__nav {
+    padding: 16px;
+  }
+  .trending__list:not(:first-child) {
+    margin-top: 24px;
+  }
 }
