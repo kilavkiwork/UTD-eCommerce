@@ -2,4 +2,9 @@
 @import "modules/main.css";
 @import "modules/typography.css";
 @import "modules/best-sellers.css";
+@import "modules/trending-nav.css";
+@import "modules/trending-content.css";
+@import "modules/trending-card.css";
+@import "modules/trending-card-prices.css";
+@import "modules/buttons.css";
 @import "modules/modal.css";

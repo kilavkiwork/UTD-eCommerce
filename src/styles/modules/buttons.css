@@ -1,0 +1,9 @@
+[data-open-button] {
+  transition: background var(--trans);
+}
+
+[data-open-button]:hover {
+  background: var(--light-gray);
+  border-color: var(--light-gray);
+  cursor: pointer;
+}
