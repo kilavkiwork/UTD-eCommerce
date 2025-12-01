@@ -32,7 +32,8 @@ html,
 body {
   min-width: 320px;
   height: 100vh;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 body {
