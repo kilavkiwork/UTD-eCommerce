@@ -1,0 +1,64 @@
+.modal__overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--trans);
+}
+
+.modal__overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 16px;
+  max-width: 450px;
+  width: 90vw;
+  padding: 2rem;
+  background-color: var(--white);
+  border-radius: 1rem;
+  box-shadow: 12px 12px 25px -10px rgba(0, 0, 0, 0.4);
+  transform: scale(0.9);
+  opacity: 0;
+  transition: all var(--trans);
+}
+
+.modal__overlay.active .modal__body {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.modal__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2em;
+  font-size: 1rem;
+  background: var(--white);
+  border: 1px solid var(--white);
+  transition: border-color var(--trans);
+  cursor: pointer;
+}
+.modal__btn:hover {
+  border-color: var(--light-gray);
+}
+.modal__btn--top {
+  align-self: flex-end;
+  width: 24px;
+  height: 24px;
+  font-size: 1.4rem;
+}
+.modal__btn--bottom {
+  width: 30%;
+}
